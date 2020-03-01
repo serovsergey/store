@@ -1,0 +1,31 @@
+{
+    "version": 1.0,
+    "objects": {
+        "catalogs": {
+            "products": {
+                "table": "cat_Products",
+                "title": "Товары",
+                "fields": {
+                    "_type": {
+                        "type": "enums.ProductTypes",
+                        "caption": "Тип"
+                    }
+
+                }
+            }
+        },
+        "documents": {
+
+        },
+        "enums": {
+            "ProductTypes": {
+                "table": "enum_ProductTypes",
+                "title": "Типы товара",
+                "values": {
+                    "0": "Товар", 
+                    "1": "Услуга"
+                }
+            }
+        }
+    }
+}
