@@ -1,25 +1,51 @@
 {
     "version": 1.0,
+    "captions": {
+        "constants": "Константы",
+        "catalogs": "Справочники",
+        "seqs": "Последовательности",
+        "documents": "Документы",
+        "info_regs": "Регистры сведений",
+        "accum_regs": "Регистры накопления",
+        "enums": "Перечисления"
+    },
     "objects": {
+        "constants": {
+
+        },
         "catalogs": {
             "products": {
-                "table": "cat_Products",
                 "title": "Товары",
                 "fields": {
                     "_type": {
-                        "type": "enums.ProductTypes",
-                        "caption": "Тип"
+                        "caption": "Тип",
+                        "type": "enums.product_types"
+                    },
+                    "_measure": {
+                        "caption": "Единица измерения",
+                        "type": "catalogs.measures"
                     }
-
                 }
+            },
+            "measures": {
+                "title": "Единицы измерения",
+                "flat": 1
             }
+        },
+        "seqs" : {
+
         },
         "documents": {
 
         },
+        "info_regs": {
+
+        },
+        "accum_regs": {
+
+        },
         "enums": {
-            "ProductTypes": {
-                "table": "enum_ProductTypes",
+            "product_types": {
                 "title": "Типы товара",
                 "values": {
                     "0": "Товар", 

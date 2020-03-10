@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class interface extends Model
+class _Interface extends Model
 {
     //
 }
