@@ -1,6 +1,6 @@
 {
     "version": 1.0,
-    "captions": {
+    "object_captions": {
         "constants": "Константы",
         "catalogs": "Справочники",
         "seqs": "Последовательности",
@@ -14,22 +14,48 @@
 
         },
         "catalogs": {
+            "partners": {
+                "title": "Контрагенты",
+                "tree": 1, 
+                "fields": {
+                    "description": {
+                        "caption": "Наименование"
+                    },
+                    "full_desc": {
+                        "caption": "Полное наименование"
+                    },
+                    "address": {
+                        "caption": "Адрес"
+                    }
+                }
+            },
             "products": {
                 "title": "Товары",
+                "tree": 1,
                 "fields": {
+                    "description": {
+                        "caption": "Наименование"
+                    },
+                    "barcode": {
+                        "caption": "Штрихкод"
+                    },
                     "_type": {
                         "caption": "Тип",
-                        "type": "enums.product_types"
+                        "metatype": "enums.product_types"
                     },
                     "_measure": {
                         "caption": "Единица измерения",
-                        "type": "catalogs.measures"
+                        "metatype": "catalogs.measures"
                     }
                 }
             },
             "measures": {
                 "title": "Единицы измерения",
-                "flat": 1
+                "fields": {
+                    "description": {
+                        "caption": "Наименование"
+                    }
+                }
             }
         },
         "seqs" : {

@@ -25,6 +25,10 @@ use App\Product;
 Route::get('/catalog/{catalog}/get-groups', 'CatController@getGroups')->middleware('auth:api'); 
 Route::get('/catalog/{catalog}/get-children/{id}', 'CatController@getChildren');
 
+Route::get('/andrey/hello', function () {
+    return 'hello, bro';
+});
+
 Route::get('/catalog/{catalog}/get-all', function () {
     return new ProductCollection(Product::paginate(4));
 });
